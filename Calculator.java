@@ -10,9 +10,9 @@ public class Calculator {
 		double liczba2;
 		double Obliczanie;
 		int znak;
-	System.out.println("Za pomoc¹ znaków wybierz dzia³anie jakie chcesz wykonaæ: ");
+	System.out.println("Za pomocÂ¹ znakÃ³w wybierz dziaÂ³anie jakie chcesz wykonaÃ¦: ");
 	System.out.println("(1): suma");
-	System.out.println("(2): ró¿nica");
+	System.out.println("(2): rÃ³Â¿nica");
 	System.out.println("(3): iloczyn");
 	System.out.println("(4): iloraz");
 	System.out.println("(5): reszta dzielenia");
@@ -25,86 +25,86 @@ public class Calculator {
 		switch(znak)
 		{
 		case 1:
-			System.out.print("Aby wykonaæ sumê...");
-			System.out.print("Podaj pierwsz¹ liczbê: ");
+			System.out.println("Aby wykonaÃ¦ sumÃª...");
+			System.out.print("Podaj pierwszÂ¹ liczbÃª: ");
 			Scanner licz1= new Scanner(System.in);
 			liczba1 = licz1.nextDouble();
-			System.out.print("Podaj druga liczbê: ");
+			System.out.print("Podaj druga liczbÃª: ");
 			Scanner licz2= new Scanner(System.in);
 			liczba2 = licz2.nextDouble();
 			Obliczanie=liczba1+liczba2;
 			System.out.println("Suma tych liczb wynosi: " +Obliczanie);
 			break;
 		case 2:
-			System.out.print("Aby wykonaæ ró¿nicê...");
-			System.out.print("Podaj pierwsz¹ liczbê: ");
+			System.out.println("Aby wykonaÃ¦ rÃ³Â¿nicÃª...");
+			System.out.print("Podaj pierwszÂ¹ liczbÃª: ");
 			Scanner licz1r= new Scanner(System.in);
 			liczba1 = licz1r.nextDouble();
-			System.out.print("Podaj druga liczbê: ");
+			System.out.print("Podaj druga liczbÃª: ");
 			Scanner licz2r= new Scanner(System.in);
 			liczba2 = licz2r.nextDouble();
 			Obliczanie=liczba1-liczba2;
-			System.out.println("Ró¿nica tych liczb wynosi: " +Obliczanie);
+			System.out.println("RÃ³Â¿nica tych liczb wynosi: " +Obliczanie);
 			break;
 		case 3:
-			System.out.print("Aby wykonaæ iloczyn...");
-			System.out.print("Podaj pierwsz¹ liczbê: ");
+			System.out.println("Aby wykonaÃ¦ iloczyn...");
+			System.out.print("Podaj pierwszÂ¹ liczbÃª: ");
 			Scanner licz1m= new Scanner(System.in);
 			liczba1 = licz1m.nextDouble();
-			System.out.print("Podaj druga liczbê: ");
+			System.out.print("Podaj druga liczbÃª: ");
 			Scanner licz2m= new Scanner(System.in);
 			liczba2 = licz2m.nextDouble();
 			Obliczanie=liczba1*liczba2;
 			System.out.println("Iloczyn tych liczb wynosi: " +Obliczanie);
 			break;
 		case 4:
-			System.out.print("Aby wykonaæ iloraz...");
-			System.out.print("Podaj pierwsz¹ liczbê: ");
+			System.out.println("Aby wykonaÃ¦ iloraz...");
+			System.out.print("Podaj pierwszÂ¹ liczbÃª: ");
 			Scanner licz1i= new Scanner(System.in);
 			liczba1 = licz1i.nextDouble();
-			System.out.print("Podaj druga liczbê: ");
+			System.out.print("Podaj druga liczbÃª: ");
 			Scanner licz2i= new Scanner(System.in);
 			liczba2 = licz2i.nextDouble();
 			Obliczanie=liczba1/liczba2;
 			if (liczba2==0)
-				System.out.print("Nie dzieli siê przez 0!");
+				System.out.println("Nie dzieli siÃª przez 0!");
 			else
 			System.out.println("Iloraz tych liczb wynosi: " +Obliczanie);
 			break;
 		case 5:
-			System.out.print("Abym pokaza³ resztê z dzielenia...");
-			System.out.print("Podaj pierwsz¹ liczbê: ");
+			System.out.println("Abym pokazaÂ³ resztÃª z dzielenia...");
+			System.out.print("Podaj pierwszÂ¹ liczbÃª: ");
 			Scanner licz1_r= new Scanner(System.in);
 			liczba1 = licz1_r.nextDouble();
-			System.out.print("Podaj druga liczbê: ");
+			System.out.print("Podaj druga liczbÃª: ");
 			Scanner licz2_r= new Scanner(System.in);
 			liczba2 = licz2_r.nextDouble();
 			Obliczanie=liczba1%liczba2;
 			System.out.println("Reszta z dzielenia tych liczb wynosi: " +Obliczanie);
 			break;
 		case 6:
-			System.out.print("Abym podniós³ liczbê do potêgi...");
-			System.out.print("Podaj liczbê któr¹ chcesz podnieœæ do potêgi: ");
+			System.out.println("Abym podniÃ³sÂ³ liczbÃª do potÃªgi...");
+			System.out.print("Podaj liczbÃª ktÃ³rÂ¹ chcesz podnieÅ“Ã¦ do potÃªgi: ");
 			Scanner pot= new Scanner(System.in);
 			liczba1=pot.nextDouble();
-			System.out.print("Podaj wyk³adnik potêgi: ");
+			System.out.print("Podaj wykÂ³adnik potÃªgi: ");
 			Scanner wyk= new Scanner(System.in);
 			liczba2=wyk.nextDouble();
 			Obliczanie=pow(liczba1,liczba2);
-			System.out.print("Wynikiem potêgowania jest liczba: " +Obliczanie);
+			System.out.println("Wynikiem potÃªgowania jest liczba: " +Obliczanie);
 		break;
 		case 7:
-			System.out.print("Abym wyliczy³ pierwiastek z liczby...");
-			System.out.print("Podaj liczbê pod pierwiastkiem: ");
+			System.out.println("Abym wyliczyÂ³ pierwiastek z liczby...");
+			System.out.print("Podaj liczbÃª pod pierwiastkiem: ");
 			Scanner liczbp= new Scanner(System.in);
 			liczba1=liczbp.nextDouble();
-			System.out.print("Podaj stopieñ pierwiastka: ");
+			System.out.print("Podaj stopieÃ± pierwiastka: ");
 			Scanner stopien= new Scanner(System.in);
 			liczba2=stopien.nextDouble();
 			Obliczanie=pow(liczba1,1.0/liczba2);
-			System.out.print("Wynikiem pierwiastkowania jest liczba: " +Obliczanie);
+			System.out.println("Wynikiem pierwiastkowania jest liczba: " +Obliczanie);
 		case 8:
-			System.out.print("Postanowi³eœ wyjœæ z programu.");
+			System.out.print("PostanowiÂ³eÅ“ wyjÅ“Ã¦ z programu.");
 
 			break;
 		}			
