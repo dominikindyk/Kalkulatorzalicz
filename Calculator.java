@@ -107,6 +107,9 @@ public class Calculator {
 			System.out.print("Postanowi³eœ wyjœæ z programu.");
 
 			break;
+		default:
+			System.out.println("Nie wybrałeś żadnego równania.");
+			break;
 		}			
 		if(znak==8)
 			break;
